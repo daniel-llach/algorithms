@@ -1,2 +1,2 @@
 # algorithms
-some algorithms exercises to learn
+some algorithms exercises in javascript to learn
