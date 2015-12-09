@@ -2,14 +2,14 @@
 
 var start = new Date().getMilliseconds();
 
-smallestMultiple(10);
+smallestMultiple(20);
 
 function smallestMultiple(limit){
   var i = 1;
   do{
     var coincidences = 0;
     for( z=1; z<limit+1; z++){
-      if( i % z === 0){
+      if( i*2*3*5*7*11*13*17*19 % z === 0){
         console.log("coincidence: ", coincidences);
         coincidences += 1;
       }else{
@@ -17,11 +17,11 @@ function smallestMultiple(limit){
       }
     }
     console.log("i: ", i);
-    i = i++;
+    i++;
   }
 
   while( coincidences < limit ){
-    console.log("result: ", i-1);
+    console.log("result: ", (i-1)*2*3*5*7*11*13*17*19);
   }
 
 }
